@@ -19,3 +19,6 @@ const Route = use('Route')
 Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
 })
+
+Route.resource('alunos', 'AlunoController').apiOnly()
+Route.resource('modalidades', 'ModalidadeController').apiOnly()
